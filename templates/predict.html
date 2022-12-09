@@ -1,0 +1,27 @@
+{% load static %}
+
+<html>
+<head>
+    <title>prediction</title>
+    <link rel="stylesheet" href="{% static 'css/style4.css' %}">
+</head>
+<body>
+    <div class="about1">
+        <div class="navbar">
+            <img src="static/logo.png" class="logo">
+            <ul>
+              <li>
+                <a href="back_button">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="about_text">
+            <h4>Your dog is {{name}} </h4><br>
+            <img src="{{dg}}" width="25%",height="25%"><br>
+            <iframe src={{lk}} width=50% height=450px></iframe>
+        </div>
+
+</body>
+</html>

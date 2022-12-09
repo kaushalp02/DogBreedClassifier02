@@ -1,0 +1,60 @@
+{% load static %}
+{% if messg %}
+<script>
+  alert('{{ messg }}');
+</script>
+{% endif %}
+<html>
+    <head>
+        <title>Login</title>    
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+
+      <script>
+
+      </script>
+      <div class="banner2">
+        <div class="navbar">
+          <img src="static/logo.png" class="logo">
+          <ul>
+            <li>
+              <a href="http://127.0.0.1:8000/#">Back</a>
+            </li>
+          </ul>
+        </div>
+        <div class="content">
+          <form action="home_2" method="post">
+            {% csrf_token %}
+            <label for="uname"><b>USER EMAIL : </b></label>
+            <input class = "input2" type="email" placeholder="Enter Email" name="uname" required>
+            <br>
+            <label for="name"><b>USER NAME : </b></label>
+            <input class = "input2" placeholder="Enter Name" name="name" required>
+            <br>
+            <label for="psw"><b>PASSWORD :</b></label>
+            <input class = "input2" type="password" placeholder="Enter Password" name="psw" required>
+            <br>
+            <label><b>Select City : </b></label>
+            <select name="city" required>
+             <option value="Ahmedabad">Ahmedabad</option> 
+             <option value="Surat">Surat</option>
+             <option value="Vadodara">Vadodara</option>
+             <option value="Mehsana">Mehsana</option>
+             <option value="Nadiad">Nadiad</option>
+             <option value="Anand">Anand</option>
+             <option value="Rajkot">Rajkot</option>
+             <option value="Jamnagar">Jamnagar</option>
+             <option value="Gandhinagar">Gandhinagar</option>
+             <option value="Porbandar">Porbandar</option>
+            </select>
+            <br>
+            <button type="submit"> <span> </span> Sign up</button><br>
+            <!-- <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label> -->
+            </form>
+          </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+{% load static %}
+
+<html>
+<head>
+    <title>Community</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+  <div class="banner">
+    <div class="about1">
+        <div class="navbar">
+            <img src="static/logo.png" class="logo">
+            <ul>
+              <li>
+                <a href="back_button">Home</a>
+              </li>
+            </ul>
+          </div>
+          <div class="content">
+        <div class="about_text">
+            <h2>Community</h2>
+            <br>
+            <h5>Meet people around you </h5>
+            <button type="button" onclick="location.href='{% url 'nearby' %}'"> <span></span> Find People </button>
+            <button type="button" onclick="location.href='{% url 'myprofile' %}'"> <span></span> Upload Photos </button>
+            <button type="button" onclick="location.href='{% url 'mydp' %}'"> <span></span> Set Profile Picture </button>
+            <button type="button" onclick="location.href='{% url 'myphotos' %}'"> <span></span> My Photos </button>
+        </div>
+      </div>
+        </div>
+    </div>
+</body>
+</html>

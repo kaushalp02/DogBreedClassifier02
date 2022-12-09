@@ -1,0 +1,33 @@
+{% load static %}
+
+<html>
+<head>
+    <title>Community</title>
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+
+</head>
+<body>
+    <div class="about1">
+        <div class="navbar">
+            <img src="static/logo.png" class="logo">
+            <ul>
+              <li>
+                <a href="back_button">Home</a>
+              </li>
+            </ul>
+          </div>
+        <div class="about_text">
+           {% for local_emails, local_names,dps in comb_lis %}
+            <img src="{{dps}}" width="10%",height="10%">
+            <br>
+            email : {{local_emails}} &nbsp;<br> name : {{local_names}}
+            <br><br>
+            <!-- <form action="img_submit" method="post">
+            <input type="hidden" name="u_id" id="u_id">
+            <input type="submit" value = "submit">
+            </form> -->
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

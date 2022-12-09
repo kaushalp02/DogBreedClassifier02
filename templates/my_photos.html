@@ -1,0 +1,35 @@
+{% load static %}
+
+<html>
+<head>
+    <title>Community</title>
+    <link rel="stylesheet" href="{% static 'css/style3.css' %}">
+</head>
+<body>
+    <div class="about1">
+        <div class="navbar">
+            <img src="static/logo.png" class="logo">
+            <ul>
+              <li>
+                <a href="back_button">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="about_text">
+          <br>
+          <h4>Profile Picture :</h4>
+          <br>
+          <img src="{{dp}}" width="25%",height="25%">
+          <br>
+          <h4>All Your Photos :</h4>
+            <br><br>
+           {% for i in img_lis %}
+            <img src="{{i}}" width="25%",height="25%" >
+            <br><br>
+            {% endfor %}
+        </div>
+      
+</body>
+</html>

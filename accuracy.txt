@@ -1,0 +1,4 @@
+EfficientNetB0  and B5 accuracy with Adam Optimizer 87% and 95%
+EfficientNetB0 with AdaBelief Optimizer 88% accuracy 
+InceptionResnetV2 accuracy 98%
+InceptionV3 93%
