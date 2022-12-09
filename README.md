@@ -17,3 +17,5 @@ open project folder and run python manage.py
 Now Our Web application is ready to run 
 We have used firebase database which is already 
 configured in python file.
+
+Model Drive Link : https://drive.google.com/drive/folders/1OANC1nR5_5M4dQzzJevHDM_BJn5bciOl?usp=share_link
